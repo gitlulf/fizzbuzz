@@ -9,7 +9,7 @@ public class ConsoleBasedFizzBuzz implements FizzBuzz {
         }
     }
     
-    public String compute (int number) {
+    protected String compute (int number) {
             String output = "";
             if (number % 3 == 0) {
                 output = "Fizz";
@@ -17,7 +17,7 @@ public class ConsoleBasedFizzBuzz implements FizzBuzz {
             if (number % 5 == 0) {
                 output = output + "Buzz";
             }
-            if (output == null || output.length() == 0) {
+            if (output.length() == 0) {
                 output = String.valueOf(number);
             }
             return output;
