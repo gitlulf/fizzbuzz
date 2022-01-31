@@ -22,4 +22,19 @@ public class ConsoleBasedFizzBuzz implements FizzBuzz {
             }
             return output;
     }
+    
+    // als Versuch
+    protected String compute2 (int number) { 
+        String output = "";
+        if (number == 42){
+            output = "Sinn des Lebens.";
+        }
+        else if (number%7 == 0){
+            output = "Bingo";
+        }
+        else {
+            output = String.valueOf(number);
+        }
+        return output;
+    }
 }
